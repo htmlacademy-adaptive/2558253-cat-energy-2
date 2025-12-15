@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <title>Кэт Энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicons/32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
@@ -12,8 +16,15 @@
 <body class="page__body">
   <header class="page__header header">
     <a class="header__logo logo" href="index.html" aria-current="page">
-      <img class="logo__img" src="#" width="33" height="38" alt="Логотип сайта">
-      <img class="logo__text" src="#" width="101" height="18" lang="en" alt="Cat Energy">
+      <picture>
+        <source media="(min-width: 1260px)" srcset="images/logo-desktop.svg" type="image/svg+xml" width="70" height="59">
+        <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" type="image/svg+xml" width="60" height="50">
+        <img class="logo__img" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип сайта">
+      </picture>
+      <picture>
+        <source media="(min-width: 1280px)" srcset="images/logo-text.svg" type="image/svg+xml" width="118" height="21">
+        <img class="logo__text" src="images/logo-text.svg" width="101" height="18" lang="en" alt="Cat Energy">
+      </picture>
     </a>
     <nav class="header-nav main-nav">
       <button class="main-nav__toggle" type="button">
@@ -37,7 +48,12 @@
     <section class="hero">
       <h1 class="hero__title">Функциональное питание для котов</h1>
       <p class="hero__text">Занялся собой? Займись котом!</p>
-      <img class="hero__img" src="#" width="280" height="270" alt="Упаковка Cat Energy со вкусом курицы 500 г">
+      <picture>
+        <source media="(min-width: 768px)" srcset="images/hero/hero-can-tablet@1x.webp 1x, images/hero-can-tablet@2x.webp 2x" type="image/webp" width="709" height="609">
+        <source media="(min-width: 768px)" srcset="images/hero/hero-can-tablet@1x.png 1x, images/hero-can-tablet@2x.png 2x" type="image/png" width="709" height="609">
+        <source srcset="images/hero/hero-can-mobile@1x.webp 1x, images/hero/hero-can-mobile@2x.webp 2x" type="image/webp" width="280" height="270">
+        <img class="hero__img" src="images/hero/hero-can-mobile@1x.png" srcset="images/hero/hero-can-mobile@2x.png 2x" width="280" height="270" alt="Упаковка Cat Energy со вкусом курицы 500 г">
+      </picture>
       <a class="hero__link button" href="#">Подобрать программу</a>
     </section>
 
@@ -101,8 +117,18 @@
         <button class="slider__thumb" type="button">
           <span class="visually-hidden">Ползунок слайдера</span>
         </button>
-        <img class="slider__image slider__image--before" src="#" width="280" height="256" alt="Кот до приема функционального питания">
-        <img class="slider__image slider__image--after" src="#" width="280" height="256" alt="Кот после приема функционального питания">
+        <picture>
+          <source media="(min-width: 768px)" srcset="images/slider/slider-cat-before-tablet@1x.webp 1x, images/slider/slider-cat-before-tablet@2x.webp 2x" type="image/webp" width="560" height="512">
+          <source media="(min-width: 768px)" srcset="images/slider/slider-cat-before-tablet@1x.png 1x, images/slider/slider-cat-before-tablet@2x.png 2x" type="image/png" width="560" height="512">
+          <source srcset="images/slider/slider-cat-before-mobile@1x.webp 1x, images/slider/slider-cat-before-mobile@2x.webp 2x" type="image/webp" width="280" height="256">
+          <img class="slider__image slider__image--before" src="images/slider/slider-cat-before-mobile@1x.png" srcset="images/slider/slider-cat-before-mobile@2x.png 2x" width="280" height="256" alt="Кот до приема функционального питания">
+        </picture>
+        <picture>
+          <source media="(min-width: 768px)" srcset="images/slider/slider-cat-after-tablet@1x.webp 1x, images/slider/slider-cat-after-tablet@2x.webp 2x" type="image/webp" width="560" height="512">
+          <source media="(min-width: 768px)" srcset="images/slider/slider-cat-after-tablet@1x.png 1x, images/slider/slider-cat-after-tablet@2x.png 2x" type="image/png" width="560" height="512">
+          <source srcset="images/slider/slider-cat-after-mobile@1x.webp 1x, images/slider/slider-cat-after-mobile@2x.webp 2x" type="image/webp" width="280" height="256">
+          <img class="slider__image slider__image--after" src="images/slider/slider-cat-after-mobile@1x.png" srcset="images/slider/slider-cat-after-mobile@2x.png 2x" width="280" height="256" alt="Кот после приема функционального питания">
+        </picture>
       </div>
     </section>
   </main>
@@ -112,13 +138,20 @@
       <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
       <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
       <div class="contacts__map">
-        <img class="contacts__map-img" src="#" width="320" height="362" alt="Расположение нашего магазина на карте">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/map/map-desktop@1x.webp 1x, images/map/map-desktop@2x.webp 2x" type="image/webp" width="1440" height="400">
+          <source media="(min-width: 1440px)" srcset="images/map/map-desktop@1x.jpg 1x, images/map/map-desktop@2x.jpg 2x" type="image/jpg" width="1440" height="400">
+          <source media="(min-width: 768px)" srcset="images/map/map-tablet@1x.webp 1x, images/map/map-tablet@2x.webp 2x" type="image/webp" width="768" height="400">
+          <source media="(min-width: 768px)" srcset="images/map/map-tablet@1x.jpg 1x, images/map/map-tablet@2x.jpg 2x" type="image/jpg" width="768" height="400">
+          <source srcset="images/map/map-mobile@1x.webp 1x, images/map/map-mobile@2x.webp 2x" type="image/webp" width="320" height="362">
+          <img class="contacts__map-img" src="images/map/map-mobile@1x.jpg" srcset="images/map/map-mobilep@2x.jpg 2x" width="320" height="362" alt="Расположение нашего магазина на карте">
+        </picture>
       </div>
     </section>
 
     <div class="footer__wrapper">
       <a class="footer__logo logo" href="index.html" aria-current="page">
-        <img class="logo__text" src="#" width="128" height="24" lang="en" alt="Cat Energy">
+        <img class="logo__text" src="images/logo-text.svg" width="128" height="24" lang="en" alt="Cat Energy">
       </a>
       <ul class="footer__list socials-list">
         <li class="socials-list__item">
