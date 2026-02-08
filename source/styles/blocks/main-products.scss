@@ -1,2 +1,6 @@
 // .main-products {}
-// .main-products__item {}
+.main-products__item {
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
+    padding: 10px 37px 40px;
+  }
+}

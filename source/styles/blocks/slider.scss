@@ -3,6 +3,16 @@
   display: grid;
   grid-template-columns: 50% 50%;
   position: relative;
+
+  @media screen and (min-width: $tablet-width) {
+    width: 560px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 }
 
 .slider__thumb {
@@ -69,6 +79,10 @@
   display: block;
 }
 
-//.slider__image--before {}
+.slider__image--before {
+  clip-path: inset(0 50% 0 0);
+}
 
-//.slider__image--after {}
+.slider__image--after {
+  clip-path: inset(0 0 0 50%);
+}

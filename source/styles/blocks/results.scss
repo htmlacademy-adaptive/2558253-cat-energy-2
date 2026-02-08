@@ -4,6 +4,14 @@
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 20px;
+
+  @media screen and (min-width: $tablet-width) {
+    gap: 43px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    justify-content: flex-start;
+  }
 }
 
 .results__item {
@@ -22,6 +30,11 @@
   padding: 14px;
   width: 124px;
   text-align: center;
+
+  @media screen and (min-width: $tablet-width) {
+    @include font-custom($font-secondary, 30px, 400, 37px, $text-color-secondary);
+    width: 150px;
+  }
 }
 
 .results__description {
@@ -33,4 +46,13 @@
   width: min-content;
   padding: 0 20px;
   background-color: #eaeaea;
+
+  @media screen and (min-width: $tablet-width) {
+    @include font-custom($font-primary, 14px, 400, 14px, $text-color-primary);
+    background-color: $bg-color-primary;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    background-color: $bg-color-secondary;
+  }
 }

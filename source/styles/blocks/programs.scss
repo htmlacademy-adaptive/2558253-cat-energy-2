@@ -1,11 +1,30 @@
 .programs {
   padding: 0 20px;
+
+  @media screen and (min-width: $desktop-width) {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
 }
 
 .programs__list {
   @include list-reset;
+
+  @media screen and (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
 }
 
-.programs__item {
+.programs__item:not(:last-child) {
   margin-bottom: 20px;
+
+  @media screen and (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }

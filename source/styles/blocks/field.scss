@@ -1,8 +1,14 @@
-// .field {}
-// .field__text {}
 .field__input {
   @include font-custom($font-secondary, 20px, 400, 24px, $text-color-primary);
   text-transform: uppercase;
   width: 100%;
   margin-bottom: 16px;
+  border: 1px solid #cdcdcd;
+  padding: 13px;
+
+  @media screen and (min-width: $tablet-width) {
+    margin-bottom: 0;
+    max-width: 492px;
+    margin-left: auto;
+  }
 }
