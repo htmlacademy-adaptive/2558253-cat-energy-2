@@ -1,0 +1,3 @@
+.section-title {
+  @include font-custom($font-secondary, 36px, 400, 36px, $text-color-secondary);
+}

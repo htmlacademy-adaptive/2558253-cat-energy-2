@@ -1,0 +1,12 @@
+.logo {
+  align-items: center;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}

@@ -1,0 +1,20 @@
+.subscription-form {
+  @media screen and (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 0.6fr 0.4fr;
+  }
+}
+
+.subscription-form__field {
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.subscription-form__button {
+  padding: 15px;
+
+  @media screen and (min-width: $tablet-width) {
+    max-width: 256px;
+  }
+}

@@ -1,0 +1,104 @@
+.main-nav__toggle {
+  background-image: url("../../icons/stack.svg#burger-open");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  &--active {
+    background-image: url("../../icons/stack.svg#burger-close");
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__list {
+  @include list-reset;
+  display: none;
+  transition: all 0.3s ease;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: $bg-color-primary;
+  width: 100%;
+
+  &--active {
+    display: block;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    column-gap: 33px;
+    transform: none;
+    position: static;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    max-width: 600px;
+    background-color: transparent;
+  }
+}
+
+.main-nav__item {
+  padding: 22px 0 24px;
+  border-top: 1px solid #e6e6e6;
+  text-align: center;
+
+  @media screen and (min-width: $tablet-width) {
+    border-top: none;
+  }
+}
+
+.main-nav__link {
+  @include font-custom($font-secondary, 20px, 400, 20px, $text-color-secondary);
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 8px;
+  }
+}
+
+.main-nav__link--current {
+  @media screen and (min-width: $tablet-width) {
+    border-bottom: 2px solid $bg-color-basic;
+  }
+
+  &.main-nav__link--index {
+    @media screen and (min-width: $desktop-width) {
+      border-bottom: 2px solid $bg-color-primary;
+    }
+  }
+}
+
+.main-nav__link--index {
+  @media screen and (min-width: $desktop-width) {
+    color: $text-color-tertiary;
+  }
+}

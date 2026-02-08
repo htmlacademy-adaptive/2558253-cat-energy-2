@@ -1,0 +1,147 @@
+.card {
+  display: grid;
+  grid-template-columns: 20px 140px 1fr 20px;
+  row-gap: 13px;
+  border-top: 1px solid #ebebeb;
+  padding: 20px 0 24px;
+
+  &--last {
+    position: relative;
+    padding-top: 80px;
+    border-bottom: 1px solid #ebebeb;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+  }
+
+  &--last::before {
+    content: "";
+    position: absolute;
+    background-image: url("../../icons/plus.svg");
+    width: 30px;
+    height: 30px;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    justify-content: end;
+    background-image: linear-gradient(to bottom, transparent 81px, $bg-color-secondary 81px);
+    border-top: none;
+    padding: 9px 37px 40px;
+
+    &--last {
+      background-image: none;
+      border: 2px solid $bg-color-secondary;
+      margin-top: 81px;
+      padding-top: 0;
+    }
+
+    &--last::before {
+      width: 60px;
+      height: 60px;
+      top: 50px;
+    }
+  }
+}
+
+.card__link-img {
+  grid-area: 1 / 2 / span 2 / 3;
+  place-self: center center;
+
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    width: 200px;
+    height: 210px;
+    place-content: end center;
+    flex-wrap: wrap;
+  }
+}
+
+.card__link {
+  text-decoration: none;
+  grid-column: 3 / 4;
+
+  @media screen and (min-width: $tablet-width) {
+    margin: 0 auto;
+  }
+}
+
+.card__title {
+  @include font-custom($font-secondary, 16px, 400, 20px, $text-color-card-title);
+  text-transform: uppercase;
+  max-width: 95px;
+
+  &--last {
+    max-width: fit-content;
+    justify-self: center;
+    margin: 0;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    @include font-custom($font-secondary, 20px, 400, 24px, $text-color-card-title);
+    text-align: center;
+    max-width: 135px;
+
+    &--last {
+      max-width: 170px;
+      margin: 0 auto 23px;
+    }
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.card__info {
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+
+  @media screen and (min-width: $tablet-width) {
+    @include font-custom($font-primary, 16px, 400, 20px, $text-color-primary);
+    border-bottom: 1px solid #cdcdcd;
+    padding-top: 4px;
+    padding-bottom: 5px;
+  }
+}
+
+.card__info-wrapper {
+  grid-area: 2 / 3 / 3 / 4;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__info-description {
+  font-size: 12px;
+  line-height: 16px;
+  margin-left: auto;
+
+  @media screen and (min-width: $tablet-width) {
+    @include font-custom($font-primary, 16px, 400, 20px, $text-color-primary);
+  }
+}
+
+.card__info-description--last {
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 13px;
+
+  @media screen and (min-width: $tablet-width) {
+    max-width: 170px;
+    padding-bottom: 32px;
+  }
+}
+
+.card__button {
+  grid-column: 2 / span 2;
+
+  @media screen and (min-width: $tablet-width) {
+    padding: 10px 26px;
+  }
+}

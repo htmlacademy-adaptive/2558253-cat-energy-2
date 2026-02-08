@@ -1,0 +1,21 @@
+.button {
+  @include font-custom($font-secondary, 16px, 400, 20px, $text-color-tertiary);
+  @include button;
+  padding: 10px;
+  width: 100%;
+
+  &--secondary {
+    background-color: $bg-color-secondary;
+    color: $text-color-primary;
+  }
+
+  &:hover,
+  &:focus-visible {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}

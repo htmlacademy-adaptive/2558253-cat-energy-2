@@ -1,0 +1,89 @@
+.footer {
+  @media screen and (min-width: $tablet-width) {
+    background-color: $bg-color-secondary;
+  }
+}
+
+.footer__contacts {
+  @media screen and (min-width: $desktop-width) {
+    display: grid;
+    grid-template-rows: 95px 1fr 106px;
+    grid-template-columns: 1fr 1320px 1fr;
+  }
+}
+
+.footer__wrapper {
+  padding: 40px 20px;
+  text-align: center;
+
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 55px 30px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: $desktop-width;
+    margin: 0 auto;
+    padding-block: 70px;
+  }
+}
+
+.footer__logo {
+  margin-bottom: 20px;
+  display: block;
+
+  @media screen and (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.footer__list {
+  @include list-reset;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 20px 0;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: $tablet-width) {
+    border: none;
+    margin: 0;
+  }
+}
+
+.footer__developer {
+  @include font-custom($font-primary, 16px, 400, 20px, $text-color-primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+
+  &::after {
+    content: "";
+    background-color: #666666;
+    width: 27px;
+    height: 34px;
+    mask-image: url("../../icons/html-academy.svg");
+    mask-size: 27px 34px;
+    mask-position: 50%;
+    mask-repeat: no-repeat;
+  }
+
+  &:hover::after,
+  &:focus-visible::after {
+    background-color: $bg-color-basic;
+  }
+
+  &:active::after {
+    background-color: $bg-color-basic;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    width: 170px;
+  }
+}

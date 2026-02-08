@@ -1,0 +1,33 @@
+@mixin font-face($font-family, $font-weight, $font-style, $font-src) {
+  @font-face {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-style: $font-style;
+    font-display: swap;
+    src: $font-src format("woff2");
+  }
+}
+
+@mixin font-custom($font-family: $font-primary, $font-size: 14px, $font-weight: 400, $line-height: 18px, $color: $text-color-primary) {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  color: $color;
+}
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin button {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  background-color: $bg-color-basic;
+  cursor: pointer;
+}

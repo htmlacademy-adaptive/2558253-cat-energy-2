@@ -1,0 +1,12 @@
+.supplement-products__item {
+  border-top: 1px solid #cdcdcd;
+  padding: 12px 0 19px;
+
+  @media screen and (min-width: $tablet-width) {
+    border: 1px solid #cdcdcd;
+
+    &:not(:first-child) {
+      border-top: none;
+    }
+  }
+}
