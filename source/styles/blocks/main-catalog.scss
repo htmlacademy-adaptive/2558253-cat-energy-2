@@ -1,9 +1,3 @@
-.main-catalog {
-  @media screen and (min-width: $tablet-width) {
-    padding-bottom: 74px;
-  }
-}
-
 .main-catalog__list {
   @include list-reset;
 

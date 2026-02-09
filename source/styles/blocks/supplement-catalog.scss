@@ -1,13 +1,8 @@
-.supplement-catalog {
-  padding-top: 25px;
-
-  @media screen and (min-width: $desktop-width) {
-    padding-top: 0;
-  }
-}
-
 .supplement-catalog__title {
+  margin: 0;
   margin-bottom: 36px;
+  position: relative;
+  padding-right: 40px;
 
   @media screen and (min-width: $tablet-width) {
     margin: 0 0 80px;
@@ -36,5 +31,17 @@
     display: grid;
     grid-template-columns: 1fr 288px;
     column-gap: 80px;
+  }
+}
+
+.supplement-catalog__gift {
+  padding: 60px 50px 43px;
+
+  @media screen and (min-width: $tablet-width) {
+    position: relative;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding: 56px 42px 42px;
   }
 }

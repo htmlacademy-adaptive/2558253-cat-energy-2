@@ -1,14 +1,6 @@
 .catalog {
-  padding: 27px 20px 0;
-
-  @media screen and (min-width: $tablet-width) {
-    padding: 65px 30px;
-  }
-
   @media screen and (min-width: $desktop-width) {
     width: $desktop-width;
-    margin: 0 auto;
-    padding-top: 74px;
   }
 }
 
@@ -21,5 +13,33 @@
     @include font-custom($font-secondary, 60px, 400, 60px, $text-color-secondary);
     margin: 0;
     padding-bottom: 84px;
+  }
+}
+
+.catalog__main-catalog {
+  @media screen and (min-width: $tablet-width) {
+    padding-bottom: 74px;
+  }
+}
+
+.catalog__supplement-catalog {
+  padding-top: 25px;
+
+  @media screen and (min-width: $desktop-width) {
+    padding-top: 0;
+  }
+}
+
+.catalog__subscription {
+  padding-top: 40px;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: $tablet-width) {
+    padding: 80px 68px;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding: 86px 0 40px;
   }
 }

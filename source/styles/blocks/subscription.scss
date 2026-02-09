@@ -1,18 +1,8 @@
-.subscription {
-  padding-top: 40px;
-  margin-bottom: 40px;
-
-  @media screen and (min-width: $tablet-width) {
-    padding: 80px 68px;
-    margin-bottom: 0;
-  }
-
-  @media screen and (min-width: $desktop-width) {
-    padding: 86px 0 40px;
-  }
-}
-
 .subscription__title {
+  position: relative;
+  margin: 0;
+  margin-bottom: 32px;
+
   @media screen and (min-width: $tablet-width) {
     margin-bottom: 66px;
   }
@@ -23,7 +13,6 @@
   margin: 0 auto 24px;
   text-align: center;
   max-width: 280px;
-  padding-top: 32px;
 
   @media screen and (min-width: $tablet-width) {
     @include font-custom($font-secondary, 24px, 400, 32px, $text-color-secondary);

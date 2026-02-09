@@ -9,6 +9,8 @@
   <link rel="icon" href="favicons/32.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/apple-icon-180x180.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/styles.css">
 
 </head>
@@ -42,7 +44,7 @@
   </header>
 
   <main class="main-container">
-    <section class="hero">
+    <section class="main-container__hero hero">
       <h1 class="hero__title">Функциональное<br> питание для котов</h1>
       <p class="hero__text">Занялся собой? Займись котом!</p>
       <picture class="hero__img-wrapper">
@@ -54,7 +56,7 @@
       <a class="hero__link button" href="#">Подобрать программу</a>
     </section>
 
-    <section class="programs">
+    <section class="main-container__programs programs">
       <h2 class="visually-hidden">Программы питания</h2>
       <ul class="programs__list">
         <li class="programs__item program program--slim">
@@ -70,7 +72,7 @@
       </ul>
     </section>
 
-    <section class="features">
+    <section class="main-container__features features">
       <h2 class="features__title">Как это работает</h2>
       <ul class="features__list">
         <li class="features__item features__item--leaf">
@@ -92,7 +94,7 @@
       </ul>
     </section>
 
-    <section class="example">
+    <section class="main-container__example example">
       <div class="example-wrapper">
         <h2 class="example__title">Живой пример</h2>
         <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
