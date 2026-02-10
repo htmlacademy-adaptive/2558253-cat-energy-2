@@ -4,8 +4,12 @@
   align-items: center;
   gap: 24px;
   flex-wrap: wrap;
+
+  @media screen and (min-width: $tablet-width) {
+    transform: translateX(20px);
+  }
 }
-// .socials-list__item {}
+
 .socials-list__link {
   display: flex;
   min-width: 28px;

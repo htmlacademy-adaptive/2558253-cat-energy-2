@@ -46,6 +46,7 @@
   @media screen and (min-width: $desktop-width) {
     max-width: 600px;
     background-color: transparent;
+    justify-content: flex-end;
   }
 }
 
@@ -88,6 +89,7 @@
 .main-nav__link--current {
   @media screen and (min-width: $tablet-width) {
     border-bottom: 2px solid $bg-color-basic;
+    padding-bottom: 4px;
   }
 
   &.main-nav__link--index {

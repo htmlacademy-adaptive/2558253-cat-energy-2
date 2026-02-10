@@ -1,10 +1,10 @@
 .contacts__wrapper {
-  padding: 26px 20px;
+  padding: 25px 20px;
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 15px;
   background-color: $bg-color-secondary;
-  align-items: center;
+  align-items: start;
 
   @media screen and (min-width: $tablet-width) {
     padding: 60px 70px;
@@ -22,12 +22,15 @@
 }
 
 .contacts__title {
+  margin: 0;
+
   @include font-custom($font-secondary, 16px, 400, 20px, $text-color-secondary);
   text-transform: uppercase;
-  max-width: 170px;
+  flex: 0 0 125px;
 
   @media screen and (min-width: $tablet-width) {
     @include font-custom($font-secondary, 20px, 400, 26px, $text-color-secondary);
+    flex: 0 0 160px;
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -38,10 +41,12 @@
 .contacts__address {
   font-style: normal;
   line-height: 20px;
-  max-width: 160px;
+  max-width: 141px;
 
   @media screen and (min-width: $tablet-width) {
     @include font-custom($font-primary, 16px, 400, 20px, $text-color-primary);
+    max-width: 161px;
+    text-align: end;
   }
 }
 

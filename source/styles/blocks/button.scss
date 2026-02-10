@@ -4,11 +4,6 @@
   padding: 10px;
   width: 100%;
 
-  &--secondary {
-    background-color: $bg-color-secondary;
-    color: $text-color-primary;
-  }
-
   &:hover,
   &:focus-visible {
     background-color: #5eaa2f;
@@ -17,5 +12,24 @@
   &:active {
     background-color: #5eaa2f;
     color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.button--secondary {
+  background-color: $bg-color-secondary;
+  color: $text-color-primary;
+
+  &.card__button {
+    margin-top: 13px;
+  }
+
+  &:hover,
+  &:focus-visible {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    background-color: #ebebeb;
+    color: $text-color-primary;
   }
 }

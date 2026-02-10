@@ -8,7 +8,7 @@
   @media screen and (min-width: $desktop-width) {
     display: grid;
     grid-template-rows: 95px 1fr 106px;
-    grid-template-columns: 1fr 1320px 1fr;
+    grid-template-columns: 1fr 1220px 1fr;
   }
 }
 
@@ -20,18 +20,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 55px 30px;
+    padding: 45px 30px;
   }
 
   @media screen and (min-width: $desktop-width) {
-    width: $desktop-width;
+    width: $desktop-width - 220px;
     margin: 0 auto;
-    padding-block: 70px;
+    padding: 55px 0 60px;
   }
 }
 
 .footer__logo {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   display: block;
 
   @media screen and (min-width: $tablet-width) {
@@ -84,6 +84,6 @@
   }
 
   @media screen and (min-width: $tablet-width) {
-    width: 170px;
+    width: 163px;
   }
 }
