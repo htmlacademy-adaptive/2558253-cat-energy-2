@@ -25,20 +25,21 @@
     justify-content: flex-start;
     width: auto;
     flex-shrink: 0;
+    margin-bottom: 3px;
 
     & .logo__text {
       transform: translateX(0);
-      width: 118px;
     }
   }
 }
 
 .header__nav {
   @media screen and (min-width: $tablet-width) {
-    flex: 1 0 439px;
+    padding-right: 6px;
   }
 
   @media screen and (min-width: $desktop-width) {
     justify-items: flex-end;
+    padding-right: 0;
   }
 }

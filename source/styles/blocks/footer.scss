@@ -2,6 +2,12 @@
   @media screen and (min-width: $tablet-width) {
     background-color: $bg-color-secondary;
   }
+
+  @media screen and (min-width: $desktop-width) {
+    & .logo__text {
+      width: 128px;
+    }
+  }
 }
 
 .footer__contacts {
@@ -13,7 +19,7 @@
 }
 
 .footer__wrapper {
-  padding: 40px 20px;
+  padding: 38px 20px;
   text-align: center;
 
   @media screen and (min-width: $tablet-width) {
@@ -26,12 +32,12 @@
   @media screen and (min-width: $desktop-width) {
     width: $desktop-width - 220px;
     margin: 0 auto;
-    padding: 55px 0 60px;
+    padding: 52px 0 60px;
   }
 }
 
 .footer__logo {
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   display: block;
 
   @media screen and (min-width: $tablet-width) {

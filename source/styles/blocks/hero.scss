@@ -17,7 +17,7 @@
   @media screen and (min-width: $desktop-width) {
     position: static;
     display: grid;
-    grid-template-columns: 1fr 510px 870px 1fr;
+    grid-template-columns: 1fr 516px 721px 1fr;
 
     &::before {
       position: absolute;
@@ -49,11 +49,12 @@
     @include font-custom($font-secondary, 60px, 400, 60px, $text-color-secondary);
     text-align: left;
     padding-left: 90px;
+    margin-bottom: 40px;
   }
 
   @media screen and (min-width: $desktop-width) {
-    padding-top: 80px;
-    padding-left: 80px;
+    padding-top: 45px;
+    padding-left: 86px;
     margin-bottom: 40px;
     grid-column: 2 / 3;
   }
@@ -69,6 +70,7 @@
     @include font-custom($font-secondary, 20px, 400, 20px, $text-color-secondary);
     text-align: left;
     margin-left: 90px;
+    margin-bottom: 21px;
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -87,13 +89,21 @@
   @media screen and (min-width: $tablet-width) {
     width: 709px;
     height: 609px;
+    padding-left: 35px;
   }
 
   @media screen and (min-width: $desktop-width) {
-    width: 552px;
-    height: 499px;
+    width: 583px;
+    height: 502px;
     grid-area: 1 / 3 / 5 / 4;
-    margin-left: 0;
+    margin-left: -95;
+    margin-top: -88px;
+  }
+}
+
+.hero__img {
+  @media screen and (min-width: $tablet-width) {
+    height: 609px;
   }
 }
 
@@ -102,12 +112,17 @@
   padding: 10px 64px;
 
   @media screen and (min-width: $tablet-width) {
-    position: absolute;
-    content: "";
-    max-width: 250px;
-    width: 100%;
-    top: 250px;
-    left: 140px;
+    &.button {
+      position: absolute;
+      content: "";
+      max-width: 244px;
+      width: 100%;
+      top: 283px;
+      left: 120px;
+      font-size: 20px;
+      line-height: 26px;
+      padding: 14px 26px;
+    }
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -115,7 +130,7 @@
       @include font-custom($font-secondary, 20px, 400, 26px, $text-color-tertiary);
       position: static;
       grid-area: 3 / 2 / 4 / 3;
-      margin-left: 80px;
+      margin-left: 89px;
     }
   }
 }

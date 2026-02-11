@@ -17,7 +17,8 @@
     background-color: $bg-color-primary;
     flex-wrap: wrap;
     padding: 60px 80px;
-    column-gap: 87px;
+    column-gap: 90px;
+    justify-content: flex-start;
   }
 }
 
@@ -47,6 +48,10 @@
     @include font-custom($font-primary, 16px, 400, 20px, $text-color-primary);
     max-width: 161px;
     text-align: end;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    text-align: left;
   }
 }
 
