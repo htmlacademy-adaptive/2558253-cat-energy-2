@@ -1,11 +1,11 @@
 .features__title {
   @include font-custom($font-secondary, 36px, 400, 40px, $text-color-secondary);
-  margin-top: 20px;
+  margin-top: 18px;
   margin-bottom: 40px;
 
   @media screen and (min-width: $tablet-width) {
     @include font-custom($font-secondary, 60px, 400, 60px, $text-color-secondary);
-    margin: 0 0 32px;
+    margin: 0 0 35px;
   }
 }
 
@@ -14,14 +14,14 @@
 
   @media screen and (min-width: $tablet-width) {
     display: flex;
-    gap: 37px 137px;
+    gap: 73px 135px;
     flex-wrap: wrap;
     counter-reset: features__item 0;
-    padding-bottom: 50px;
+    padding-bottom: 85px;
   }
 
   @media screen and (min-width: $desktop-width) {
-    gap: 37px 77px;
+    gap: 37px 95px;
     padding-bottom: 68px;
   }
 }
@@ -35,6 +35,10 @@
     padding-top: 150px;
     position: relative;
     counter-increment: features__item 1;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: 230px;
   }
 }
 
@@ -88,6 +92,8 @@
 }
 
 .features__description {
+  margin: 0;
+
   @media screen and (min-width: $tablet-width) {
     @include font-custom($font-primary, 16px, 400, 24px, $text-color-primary);
   }

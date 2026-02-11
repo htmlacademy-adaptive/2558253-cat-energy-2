@@ -12,13 +12,21 @@
   @media screen and (min-width: $tablet-width) {
     @include font-custom($font-secondary, 60px, 400, 60px, $text-color-secondary);
     margin: 0;
-    padding-bottom: 36px;
+    padding-bottom: 30px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding-bottom: 48px;
   }
 }
 
 .catalog__main-catalog {
   @media screen and (min-width: $tablet-width) {
-    padding-bottom: 74px;
+    padding-bottom: 58px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding-bottom: 72px;
   }
 }
 

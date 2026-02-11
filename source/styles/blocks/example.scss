@@ -9,26 +9,28 @@
   }
 
   @media screen and (min-width: $desktop-width) {
-    background-image: linear-gradient($bg-color-primary 135px, $bg-color-secondary 135px 100%);
+    background-image: linear-gradient($bg-color-primary 170px, $bg-color-secondary 170px 100%);
   }
 }
 
 .example-wrapper {
   @media screen and (min-width: $desktop-width) {
-    width: $desktop-width;
+    width: $desktop-width - 220px;
     margin: 0 auto;
-    padding: 0 60px 75px;
+    padding: 0 0 55px;
     position: relative;
   }
 }
 
 .example__title {
   @include font-custom($font-secondary, 36px, 400, 40px, $text-color-secondary);
+  margin: 0;
+  padding-top: 24px;
 
   @media screen and (min-width: $tablet-width) {
     @include font-custom($font-secondary, 60px, 400, 60px, $text-color-secondary);
     margin: 0;
-    padding-bottom: 60px;
+    padding: 0 0 60px;
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -38,10 +40,13 @@
 }
 
 .example__description {
+  margin: 0;
+  padding-top: 39px;
+
   @media screen and (min-width: $tablet-width) {
     @include font-custom($font-primary, 16px, 400, 24px, $text-color-primary);
     margin: 0;
-    padding-bottom: 55px;
+    padding: 0 0 55px;
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -56,10 +61,12 @@
 }
 
 .example__list-wrapper {
+  padding-top: 20px;
+
   @media screen and (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 100px;
+    padding: 0 0 78px;
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -81,11 +88,19 @@
     flex-direction: column;
     align-items: flex-end;
     gap: 9px;
+    padding-top: 10px;
   }
 
   @media screen and (min-width: $desktop-width) {
     align-items: flex-start;
     flex-direction: row;
+    padding-top: 33px;
+  }
+}
+
+.example__cost-value {
+  @media screen and (min-width: $desktop-width) {
+    margin-left: 60px;
   }
 }
 

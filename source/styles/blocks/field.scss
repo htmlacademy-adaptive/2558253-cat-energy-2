@@ -10,5 +10,11 @@
     margin-bottom: 0;
     max-width: 492px;
     margin-left: auto;
+    padding: 17px 10px 16px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: 497px;
+    max-width: none;
   }
 }

@@ -10,3 +10,9 @@
     opacity: 0.6;
   }
 }
+
+.logo__text {
+  @media screen and (min-width: $desktop-width) {
+    width: 118px;
+  }
+}

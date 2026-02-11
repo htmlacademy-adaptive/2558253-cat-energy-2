@@ -3,8 +3,8 @@
     linear-gradient(rgba($bg-color-basic, 0.85)),
     image-set(url("../../images/gift/gift-background-mobile@1x.webp") 1x type("image/webp"),
     url("../../images/gift/gift-background-mobile@2x.webp") 2x type("image/webp"),
-    url("../../images/gift/gift-background-mobile@1x.png") 1x type("image/png"),
-    url("../../images/gift/gift-background-mobile@2x.png") 2x type("image/png"));
+    url("../../images/gift/gift-background-mobile@1x.jpg") 1x type("image/jpg"),
+    url("../../images/gift/gift-background-mobile@2x.jpg") 2x type("image/jpg"));
   background-position: 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -28,8 +28,8 @@
       linear-gradient(rgba($bg-color-basic, 0.85)),
       image-set(url("../../images/gift/gift-background-tablet@1x.webp") 1x type("image/webp"),
       url("../../images/gift/gift-background-tablet@2x.webp") 2x type("image/webp"),
-      url("../../images/gift/gift-background-tablet@1x.png") 1x type("image/png"),
-      url("../../images/gift/gift-background-tablet@2x.png") 2x type("image/png"));
+      url("../../images/gift/gift-background-tablet@1x.jpg") 1x type("image/jpg"),
+      url("../../images/gift/gift-background-tablet@2x.jpg") 2x type("image/jpg"));
     height: fit-content;
     background-position: 0;
     flex-direction: row;
@@ -47,8 +47,8 @@
       linear-gradient(rgba($bg-color-basic, 0.85)),
       image-set(url("../../images/gift/gift-background-desktop@1x.webp") 1x type("image/webp"),
       url("../../images/gift/gift-background-desktop@2x.webp") 2x type("image/webp"),
-      url("../../images/gift/gift-background-desktop@1x.png") 1x type("image/png"),
-      url("../../images/gift/gift-background-desktop@2x.png") 2x type("image/png"));
+      url("../../images/gift/gift-background-desktop@1x.jpg") 1x type("image/jpg"),
+      url("../../images/gift/gift-background-desktop@2x.jpg") 2x type("image/jpg"));
     flex-direction: column;
     gap: 46px;
     padding-bottom: 46px;
