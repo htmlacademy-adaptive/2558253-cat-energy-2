@@ -37,12 +37,6 @@
   @media screen and (min-width: $tablet-width) {
     margin: 0;
   }
-
-  @media screen and (min-width: $desktop-width) {
-    &--text {
-      width: 128px;
-    }
-  }
 }
 
 .footer__list {

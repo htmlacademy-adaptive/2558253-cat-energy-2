@@ -25,14 +25,6 @@
   }
 }
 
-.header__logo--text {
-  transform: translateX(30px);
-
-  @media screen and (min-width: $tablet-width) {
-    transform: translateX(0);
-  }
-}
-
 .header__nav {
   @media screen and (min-width: $tablet-width) {
     padding-right: 6px;
