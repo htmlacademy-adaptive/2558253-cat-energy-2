@@ -107,30 +107,26 @@
   }
 }
 
-.hero__link {
+.hero__link.hero__link--button {
   margin-top: 3px;
   padding: 10px 64px;
 
   @media screen and (min-width: $tablet-width) {
-    &.button {
-      position: absolute;
-      content: "";
-      max-width: 244px;
-      width: 100%;
-      top: 283px;
-      left: 120px;
-      font-size: 20px;
-      line-height: 26px;
-      padding: 14px 26px;
-    }
+    position: absolute;
+    content: "";
+    max-width: 244px;
+    width: 100%;
+    top: 283px;
+    left: 120px;
+    font-size: 20px;
+    line-height: 26px;
+    padding: 14px 26px;
   }
 
   @media screen and (min-width: $desktop-width) {
-    &.button {
-      @include font-custom($font-secondary, 20px, 400, 26px, $text-color-tertiary);
-      position: static;
-      grid-area: 3 / 2 / 4 / 3;
-      margin-left: 89px;
-    }
+    @include font-custom($font-secondary, 20px, 400, 26px, $text-color-tertiary);
+    position: static;
+    grid-area: 3 / 2 / 4 / 3;
+    margin-left: 89px;
   }
 }

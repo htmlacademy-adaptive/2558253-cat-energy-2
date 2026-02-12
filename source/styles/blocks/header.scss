@@ -16,7 +16,7 @@
   justify-content: space-between;
   margin-bottom: 9px;
 
-  & .logo__text {
+  & .header__logo--text {
     transform: translateX(30px);
   }
 
@@ -27,7 +27,7 @@
     flex-shrink: 0;
     margin-bottom: 3px;
 
-    & .logo__text {
+    & .header__logo--text {
       transform: translateX(0);
     }
   }
