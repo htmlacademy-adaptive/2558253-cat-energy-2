@@ -6,7 +6,7 @@
 
   &--last {
     position: relative;
-    padding-top: 80px;
+    padding-top: 82px;
     border-bottom: 1px solid #ebebeb;
     display: flex;
     flex-direction: column;
@@ -19,7 +19,7 @@
     background-image: url("../../icons/plus.svg");
     width: 30px;
     height: 30px;
-    top: 29px;
+    top: 32px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -43,7 +43,7 @@
     &--last::before {
       width: 60px;
       height: 60px;
-      top: 38px;
+      top: 52px;
     }
   }
 
@@ -182,17 +182,17 @@
 
 .card__info-description--last {
   text-align: center;
-  margin: 0 auto 15px;
+  margin: 0 auto -7px;
 
   @media screen and (min-width: $tablet-width) {
     max-width: 170px;
-    padding-bottom: 32px;
+    padding-bottom: 49px;
   }
 }
 
 .card__button {
   grid-column: 1 / -1;
-  margin-top: 21px;
+  margin-top: 17px;
 
   @media screen and (min-width: $tablet-width) {
     padding: 10px 26px;

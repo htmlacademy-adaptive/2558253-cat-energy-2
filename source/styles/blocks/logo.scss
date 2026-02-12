@@ -12,7 +12,17 @@
 }
 
 .logo__text {
+  &--header {
+    transform: translateX(30px);
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    &--header {
+      transform: translateX(0);
+    }
+  }
+
   @media screen and (min-width: $desktop-width) {
-    width: 118px;
+    width: 128px;
   }
 }

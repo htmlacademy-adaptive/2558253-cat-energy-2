@@ -19,10 +19,6 @@
   background-color: $bg-color-secondary;
   color: $text-color-primary;
 
-  &.card__button {
-    margin-top: auto;
-  }
-
   &:hover,
   &:focus-visible {
     background-color: #ebebeb;

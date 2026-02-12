@@ -1,10 +1,10 @@
 const burgerButton = document.querySelector('.main-nav__toggle');
-const mainMenu = document.querySelector('.main-nav__list');
+const mainMenu = document.querySelector('.main-nav');
 
-burgerButton.classList.remove('main-nav__toggle--active');
-mainMenu.classList.remove('main-nav__list--active');
+mainMenu.classList.remove('main-nav--nojs');
+mainMenu.classList.add('main-nav--closed');
 
 burgerButton.addEventListener('click', () => {
-  burgerButton.classList.toggle('main-nav__toggle--active');
-  mainMenu.classList.toggle('main-nav__list--active');
+  mainMenu.classList.toggle('main-nav--opened');
+  mainMenu.classList.toggle('main-nav--closed');
 });

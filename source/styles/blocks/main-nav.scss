@@ -1,19 +1,41 @@
+.main-nav {
+  @media screen and (max-width: $mobile-width-only) {
+    &--nojs .main-nav__toggle {
+      display: none;
+    }
+
+    &--closed .main-nav__list {
+      display: none;
+    }
+
+    &--closed .main-nav__toggle {
+      background-image: url("../../icons/stack.svg#burger-open");
+    }
+
+    &--opened .main-nav__list {
+      transition: all 0.3s ease;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: $bg-color-primary;
+    }
+
+    &--opened .main-nav__toggle {
+      background-image: url("../../icons/stack.svg#burger-close");
+    }
+  }
+}
+
 .main-nav__toggle {
-  background-image: url("../../icons/stack.svg#burger-open");
   background-repeat: no-repeat;
   background-color: transparent;
   border: none;
   width: 27px;
   height: 22px;
   cursor: pointer;
-
   position: absolute;
   top: 21px;
   right: 20px;
-
-  &--active {
-    background-image: url("../../icons/stack.svg#burger-close");
-  }
 
   @media screen and (min-width: $tablet-width) {
     display: none;
@@ -22,17 +44,7 @@
 
 .main-nav__list {
   @include list-reset;
-  display: none;
-  transition: all 0.3s ease;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: $bg-color-primary;
   width: 100%;
-
-  &--active {
-    display: block;
-  }
 
   @media screen and (min-width: $tablet-width) {
     display: flex;

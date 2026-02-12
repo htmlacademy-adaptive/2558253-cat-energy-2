@@ -16,20 +16,12 @@
   justify-content: space-between;
   margin-bottom: 9px;
 
-  & .logo__text {
-    transform: translateX(30px);
-  }
-
   @media screen and (min-width: $tablet-width) {
     gap: 13px;
     justify-content: flex-start;
     width: auto;
     flex-shrink: 0;
     margin-bottom: 3px;
-
-    & .logo__text {
-      transform: translateX(0);
-    }
   }
 }
 
