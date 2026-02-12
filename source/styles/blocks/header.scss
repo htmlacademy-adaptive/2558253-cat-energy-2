@@ -16,20 +16,20 @@
   justify-content: space-between;
   margin-bottom: 9px;
 
-  &--text {
-    transform: translateX(30px);
-  }
-
   @media screen and (min-width: $tablet-width) {
     gap: 13px;
     justify-content: flex-start;
     width: auto;
     flex-shrink: 0;
     margin-bottom: 3px;
+  }
+}
 
-    &--text {
-      transform: translateX(0);
-    }
+.header__logo--text {
+  transform: translateX(30px);
+
+  @media screen and (min-width: $tablet-width) {
+    transform: translateX(0);
   }
 }
 
