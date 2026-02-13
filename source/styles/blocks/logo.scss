@@ -24,5 +24,9 @@
 
   @media screen and (min-width: $desktop-width) {
     width: 128px;
+
+    &--header {
+      width: 118px;
+    }
   }
 }
