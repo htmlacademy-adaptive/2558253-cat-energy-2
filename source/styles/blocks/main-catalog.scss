@@ -4,7 +4,7 @@
   @media screen and (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(324px, 1fr));
-    gap: 9px 60px;
+    gap: 48px 60px;
   }
 
   @media screen and (min-width: $desktop-width) {
